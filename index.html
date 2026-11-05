@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carregando...</title>
+
+<link rel="icon" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+
+<style>
+body{
+margin:0;
+background:white;
+}
+
+.tela{
+position:relative;
+width:100%;
+max-width:828px;
+margin:auto;
+}
+
+.tela img{
+width:100%;
+display:block;
+}
+
+.loader{
+position:absolute;
+top:38%;
+left:47%;
+width:45px;
+height:45px;
+margin-left:-22px;
+border:6px solid #ddd;
+border-top:6px solid #1e9bff;
+border-radius:50%;
+animation:girar 1s linear infinite;
+}
+
+@keyframes girar{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+</style>
+
+<script>
+setTimeout(function(){
+window.location.href="foto1.html";
+},3000);
+</script>
+
+</head>
+
+<body>
+
+<div class="tela">
+<img src="entrada.jpg">
+<div class="loader"></div>
+</div>
+
+</body>
+</html>
